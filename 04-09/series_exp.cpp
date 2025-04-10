@@ -50,7 +50,7 @@ REAL fsmart(REAL x, int N)
 {
     REAL term = 1, suma = 1;
     for (int k = 0; k < N; ++k) {
-        term *= (-x)*term/(k+1);
+        term *= (-x)/(k+1);
         suma += term;
     }
     return suma;

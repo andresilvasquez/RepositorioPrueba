@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 //typedef float REAL;
-typedef float DOUBLE;
+typedef double REAL;
 
 int main(int argc, char **argv)
 {
@@ -15,12 +15,12 @@ int main(int argc, char **argv)
     }
 
     int N = std::atoi(argv[1]);
-    DOUBLE under = 1.0, over = 1.0;
+    REAL under = 1.0, over = 1.0;
 
     for (int ii = 0; ii < N; ++ii) {
         under /= 2;
         over *= 2;
-        std::cout << ii << "\t" << under << "\t" << over << "\t" << under << std::endl;
+        std::cout << ii << "\t" << under << "\t" << over << std::endl;
     }
 
     return 0;
