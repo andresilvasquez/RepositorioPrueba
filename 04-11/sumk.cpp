@@ -24,7 +24,7 @@ REAL sumk(int k)
         suma += 0.1;
     }
 
-    REAL aux = k/10.0;
+    REAL aux = k/10.0; // k/10.0 es más preciso pero más lento
 
     return std::fabs(aux - suma);
 }

@@ -2,6 +2,7 @@
 *.o
 *.out
 *.x
+*.txt
 
 # Ignorar archivos de respaldo
 *~
