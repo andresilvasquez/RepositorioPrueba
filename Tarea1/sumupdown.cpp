@@ -10,7 +10,7 @@ int main(void)
 {
   std::cout.precision(16); std::cout.setf(std::ios::scientific);
   
-  for (int NMAX = 1; NMAX <= 1000000; NMAX++) {
+  for (int NMAX = 1; NMAX <= 1000001; NMAX = NMAX + 10) {
     REAL up = sumup(NMAX);
     REAL down = sumdown(NMAX);
     REAL diff = std::abs(1.0 - up / down);
